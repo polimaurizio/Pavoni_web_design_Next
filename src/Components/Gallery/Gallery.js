@@ -43,7 +43,7 @@ const Gallery = ({ className }) => {
         }
       >
         {links.map((link) => (
-          <Image
+          <img
             key={link}
             className={
               'pl-5 [&:not(:hover)]:grayscale transition-all easy-in duration-300'

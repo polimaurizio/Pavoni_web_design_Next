@@ -57,7 +57,7 @@ const Nav = ({}) => {
           <Logo />
 
           <div className="w-full relative">
-            <Image
+            <img
               onClick={() => toggleMenu()}
               id="burger-icon"
               className="absolute right-0 cursor-pointer"

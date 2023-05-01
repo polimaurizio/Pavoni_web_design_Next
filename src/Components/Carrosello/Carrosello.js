@@ -25,19 +25,19 @@ const Carrosello = ({}) => {
         }}
       >
         <Carousel slideInterval={4000} className={'-px-[2px]'}>
-          <Image
+          <img
             src="/Img/img_1.jpg"
             alt="..."
-	    loading="eager"
+	          loading="eager"
             className={'object-cover h-full '}
           />
-          <Image
+          <img
             src="/Img/img_2.jpg"
             alt="..."
             loading="eager"
             className={'object-cover h-full '}
           />
-          <Image
+          <img
             src="/Img/img_3.jpg"
             alt="..."
  	    loading="eager"
@@ -68,7 +68,7 @@ const Carrosello = ({}) => {
           transition={{ duration: 1, delay: 1 }}
           className="w-100 justify-center flex -translate-y-24"
         >
-          <Image
+          <img
             className="fas fa-chevron-down"
             src="/Img/down-arrow.svg"
             alt="down-arrow"
