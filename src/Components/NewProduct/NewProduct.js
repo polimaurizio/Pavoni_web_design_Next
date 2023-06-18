@@ -1,14 +1,13 @@
 import React from "react";
 import CustomButton from "../CustomButton";
+import Image from "next/image";
 
 const NewProduct = () => {
   return (
-    <section
-      className="h-[100vh] sm:h-[100vh] flex flex-wrap"
-    >
+    <section className="h-[100vh] sm:h-[100vh] flex flex-wrap">
       <div className="h-full pt-20">
         <div>
-          <img
+          <Image
             className="hidden min-[1140px]:block w-[300px]"
             src="Img/macchina_caffe.png"
             alt="macchina_caffe"
