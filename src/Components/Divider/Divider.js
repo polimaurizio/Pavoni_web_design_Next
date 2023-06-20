@@ -1,10 +1,7 @@
-
+import React from "react";
 
 const Divider = ({}) => {
-
-    return (
-        <div className={'line h-[1px] w-[0px] bg-black'}></div>
-    );
-}
+  return <div className={"h-[1px] bg-black"}></div>;
+};
 
 export default Divider;
