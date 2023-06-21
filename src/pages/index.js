@@ -52,7 +52,7 @@ export default function Home() {
           </h1>
 
           <CustomHorizontalCard />
-          <CustomButton className={"justify-center"}>
+          <CustomButton href={"/about"} className={"justify-center"}>
             Scopri di più
           </CustomButton>
 
@@ -84,7 +84,7 @@ export default function Home() {
               },
             ]}
           />
-          <CustomButton className={"justify-center"}>
+          <CustomButton href={"/about"} className={"justify-center"}>
             Scopri di più
           </CustomButton>
 
