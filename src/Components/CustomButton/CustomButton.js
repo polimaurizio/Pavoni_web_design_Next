@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Divider from "../Divider";
 import Link from "next/link";
 
-const CustomButton = ({ href, children, variant, className }) => {
+const CustomButton = ({ href, children, className }) => {
   let classes = classNames(
     "flex pt-20 font-montserrat font-light text-base",
     className
