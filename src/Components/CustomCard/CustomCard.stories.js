@@ -10,7 +10,7 @@ export const Default = {
   args: {
     cardContent: [
       {
-        img: "/public/Loghi/image_1.jpeg",
+        img: "/Loghi/image_1.jpeg",
         title: "Esperto Edotto",
         text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
       },

@@ -1,23 +1,22 @@
-import Logo from '../Logo/Logo';
-import React, { useState } from 'react';
-import Image from 'next/image';
+import Logo from "../Logo/Logo";
+import React, { useState } from "react";
 
 const pages = [
   {
-    page: 'Home',
-    href: 'www.google.it',
+    page: "Home",
+    href: "www.google.it",
   },
   {
-    page: 'Storia',
-    href: 'storia_anchor',
+    page: "Storia",
+    href: "storia_anchor",
   },
   {
-    page: 'Prodotti',
-    href: 'prodotti_anchor',
+    page: "Prodotti",
+    href: "prodotti_anchor",
   },
   {
-    page: 'Contatti',
-    href: 'contatti_anchor',
+    page: "Contatti",
+    href: "contatti_anchor",
   },
 ];
 
@@ -27,19 +26,19 @@ const Nav = ({}) => {
   const toggleMenu = (href) => {
     setIsMenuOpen(!isMenuOpen);
 
-    var tendina = document.getElementById('tendina');
-    var image = document.getElementById('burger-icon');
+    var tendina = document.getElementById("tendina");
+    var image = document.getElementById("burger-icon");
 
     if (!isMenuOpen) {
-      document.body.style.overflow = 'hidden';
-      image.setAttribute('src', '/Img/burger_closed.svg');
-      tendina.classList.remove('tendina_burger_hide');
-      tendina.classList.add('tendina_burger_show');
+      document.body.style.overflow = "hidden";
+      image.setAttribute("src", "/Img/burger_closed.svg");
+      tendina.classList.remove("tendina_burger_hide");
+      tendina.classList.add("tendina_burger_show");
     } else if (isMenuOpen) {
-      document.body.style.overflow = 'visible';
-      image.setAttribute('src', '/Img/burger.svg');
-      tendina.classList.remove('tendina_burger_show');
-      tendina.classList.add('tendina_burger_hide');
+      document.body.style.overflow = "visible";
+      image.setAttribute("src", "/Img/burger.svg");
+      tendina.classList.remove("tendina_burger_show");
+      tendina.classList.add("tendina_burger_hide");
 
       // Scroll to view
       if (href) {
@@ -73,7 +72,8 @@ const Nav = ({}) => {
           <div className="h-screen flex justify-center md:justify-start items-center -translate-y-20 md:translate-x-[10%]">
             <div>
               {pages.map((page) => (
-                <p key={page}
+                <p
+                  key={page}
                   onClick={() => toggleMenu(page.href)}
                   className="font-montserrat uppercase text-[40px] sm:text-[50px] md:text-[60px] font-bold text-[#262626] hover:text-black mx-6 my-8 cursor-pointer text-center md:text-left"
                 >
