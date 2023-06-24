@@ -67,7 +67,7 @@ const Nav = ({}) => {
         </div>
         <div
           id="tendina"
-          className="h-0 mt-[58px] absolute w-full bg-white z-50 overflow-hidden"
+          className="h-0 mt-[58px] absolute w-full bg-[#293242] z-50 overflow-hidden"
         >
           <div className="h-screen flex justify-center md:justify-start items-center -translate-y-20 md:translate-x-[10%]">
             <div>
@@ -75,7 +75,7 @@ const Nav = ({}) => {
                 <p
                   key={page}
                   onClick={() => toggleMenu(page.href)}
-                  className="font-montserrat uppercase text-[40px] sm:text-[50px] md:text-[60px] font-bold text-[#262626] hover:text-black mx-6 my-8 cursor-pointer text-center md:text-left"
+                  className="font-montserrat uppercase text-[40px] sm:text-[50px] md:text-[60px] font-bold text-[#9DA2AE] hover:text-[#B3A188] mx-6 my-8 cursor-pointer text-center md:text-left"
                 >
                   {page.page}
                 </p>
