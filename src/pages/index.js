@@ -43,18 +43,24 @@ export default function Home() {
           {/* Sezione LA NOSTRA STORIA */}
           <a id={"storia_anchor"} />
 
-          <h1
-            className={
-              "mt-16 sm:mt-20 text-center font-bold text-[#2B2B2B] text-[30px] sm:text-[40px] font-montserrat"
-            }
-          >
-            La nostra storia
-          </h1>
+          <div className="grid grid-cols-12 gap-5 w-full">
+            <h1
+              className={
+                "mt-16 mb-10 md:mb-16 sm:mt-20 font-light text-primary text-[50px] sm:text-[70px] font-montserrat col-start-2 col-span-10"
+              }
+            >
+              La nostra storia
+            </h1>
 
-          <CustomHorizontalCard />
-          <CustomButton href={"/about"} className={"justify-center"}>
-            Scopri di più
-          </CustomButton>
+            <div className="col-start-1 col-end-6 bg-cover hidden md:flex">
+              <img
+                className="w-full h-full object-cover grayscale"
+                src="/Img/colored/story_img_7.jpg"
+                alt="story_img"
+              />
+            </div>
+            <CustomHorizontalCard />
+          </div>
 
           {/* Sezione I NOSTRI PRODOTTI */}
           <Gallery />
