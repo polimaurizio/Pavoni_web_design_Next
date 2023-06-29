@@ -31,7 +31,7 @@ const CustomButton = ({ href, children, className }) => {
           </svg>
 
           <div className={"pl-3 overflow-hidden"}>
-            <p>{children}</p>
+            <p className="text-primary">{children}</p>
             <Divider />
           </div>
         </div>
