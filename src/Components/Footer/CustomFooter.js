@@ -1,18 +1,18 @@
-import React from 'react';
-import { Footer } from 'flowbite-react';
-import Logo from '../Logo';
+import React from "react";
+import { Footer } from "flowbite-react";
+import Logo from "../Logo";
 
 const CustomFooter = ({}) => {
   return (
-    <Footer container={true} className={'pt-32 shadow-none'}>
+    <Footer container={true} className={"pt-32 shadow-none"}>
       <div className="w-full">
         <Footer.Divider />
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div className={'mb-8'}>
+          <div className={"mb-8"}>
             <Logo />
           </div>
           <div
-            id={'contatti_footer'}
+            id={"contatti_footer"}
             className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6"
           >
             <div>
