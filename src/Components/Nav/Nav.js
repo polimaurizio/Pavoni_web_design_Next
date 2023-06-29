@@ -75,7 +75,7 @@ const Nav = ({}) => {
                 <p
                   key={page}
                   onClick={() => toggleMenu(page.href)}
-                  className="font-montserrat uppercase text-[40px] sm:text-[50px] md:text-[60px] font-light text-white hover:text-secondary mx-6 my-8 cursor-pointer text-center md:text-left"
+                  className="font-montserrat uppercase text-[40px] sm:text-[50px] md:text-[60px] font-light text-white hover:text-secondary mx-6 my-8 cursor-pointer text-left"
                 >
                   {page.page}
                 </p>
