@@ -18,8 +18,12 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+
+      colors: {
+        primary: "#293242",
+        secondary: "#9DA2AE",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
 };
-
