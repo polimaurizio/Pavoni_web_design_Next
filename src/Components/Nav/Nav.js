@@ -53,7 +53,7 @@ const Nav = ({}) => {
     <div>
       <div className="navbar w-full flex bg-white h-[60px] fixed z-50 shadow-md shadow-[#0000001a]">
         <div className="w-full flex px-6 my-auto">
-          <Logo />
+          <Logo variant={"Primary"} />
 
           <div className="w-full relative">
             <img
