@@ -4,44 +4,59 @@ import Logo from "../Logo";
 
 const CustomFooter = ({}) => {
   return (
-    <Footer container={true} className={"pt-32 shadow-none"}>
-      <div className="w-full">
-        <Footer.Divider />
+    <Footer className={"pt-32 shadow-none"}>
+      <div className="w-full bg-primary p-10">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className={"mb-8"}>
-            <Logo />
+            <Logo variant={"Secondary"} />
           </div>
           <div
             id={"contatti_footer"}
             className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6"
           >
             <div>
-              <Footer.Title title="Referenti" />
-              <Footer.LinkGroup col={true}>
-                <Footer.Link href="#">Maurizio Poli</Footer.Link>
-                <Footer.Link href="#">Marco Rossi</Footer.Link>
+              <Footer.Title
+                title="Referenti"
+                className="text-white font-montserrat font-light tracking-[1px] text-left sm:text-right"
+              />
+              <Footer.LinkGroup
+                col={true}
+                className="text-white font-montserrat font-light text-left sm:text-right"
+              >
+                <a href="#">Maurizio Poli</a>
+                <a href="#">Marco Rossi</a>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Contatti" />
-              <Footer.LinkGroup col={true}>
-                <Footer.Link href="#">366 2287 342</Footer.Link>
-                <Footer.Link href="#">266 5416 761</Footer.Link>
+              <Footer.Title
+                title="Contatti"
+                className="text-white font-montserrat font-light tracking-[1px] text-left sm:text-right"
+              />
+              <Footer.LinkGroup
+                col={true}
+                className="text-white font-montserrat font-light text-left sm:text-right"
+              >
+                <a href="#">366 2287 342</a>
+                <a href="#">266 5416 761</a>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Indirizzo" />
-              <Footer.LinkGroup col={true}>
-                <Footer.Link href="#">
-                  Via Porta Nuova
-                  <br /> Verona - VR
-                </Footer.Link>
+              <Footer.Title
+                title="Indirizzo"
+                className="text-white font-montserrat font-light tracking-[1px] text-left sm:text-right"
+              />
+              <Footer.LinkGroup
+                col={true}
+                className="text-white font-montserrat font-light text-left sm:text-right"
+              >
+                <a href="#">Via Porta Nuova</a>
+                <a href="#">Verona - VR</a>
               </Footer.LinkGroup>
             </div>
           </div>
         </div>
-        <Footer.Divider />
-        <div className="w-full sm:flex sm:items-center sm:justify-between">
+
+        <div className="w-full pt-7 sm:flex sm:items-center sm:justify-between text-secondary">
           <Footer.Copyright href="#" by="La Pavoni S.R.L.™" year={2023} />
           <Footer.LinkGroup col={true}>
             <Footer.Link href="#">Privacy & Policy</Footer.Link>
