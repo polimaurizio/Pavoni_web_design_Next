@@ -90,7 +90,7 @@ export default function Home() {
               },
             ]}
           />
-          <CustomButton href={"/about"} className={"justify-center"}>
+          <CustomButton href={"#"} className={"justify-center"}>
             Scopri di più
           </CustomButton>
 
