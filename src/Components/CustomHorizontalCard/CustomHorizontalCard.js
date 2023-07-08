@@ -17,7 +17,7 @@ const CustomHorizontalCard = () => {
           come d’altra parte alla ricerca di soluzioni tecnologiche e sviluppo
           di nuovi prodotti.
         </p>
-        <CustomButton href={"/about"} className={"pt-10"}>
+        <CustomButton href={"#"} className={"pt-10"}>
           Scopri di più
         </CustomButton>
       </div>
