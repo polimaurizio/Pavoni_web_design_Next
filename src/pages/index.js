@@ -14,7 +14,6 @@ import Card from "@/Components/Card/Card";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    // Simula il caricamento dei dati
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
@@ -23,14 +22,12 @@ export default function Home() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    //container: containerRef,
     offset: ["start end", "end start"],
   });
 
   return (
     <Container className={""}>
       {isLoading ? (
-        // Mostra il preloader se isLoading è true
         <Preloader />
       ) : (
         <motion.div
@@ -41,35 +38,14 @@ export default function Home() {
           <Nav />
           <Carrosello />
 
-          {/* Sezione LA NOSTRA STORIA */}
           <a id={"storia_anchor"} />
-          <div className="grid grid-cols-12 gap-5 w-full">
-            <h1
-              className={
-                "mt-16 mb-10 md:mb-16 sm:mt-20 font-light text-primary text-[50px] sm:text-[70px] font-montserrat col-start-2 col-span-10"
-              }
-            >
-              La nostra storia
-            </h1>
-
-            <div className="col-start-1 col-end-6 bg-cover hidden md:flex">
-              <img
-                className="w-full h-full object-cover grayscale"
-                src="/Img/colored/story_img_7.jpg"
-                alt="story_img"
-              />
-            </div>
-            <History />
-          </div>
-
-          {/* Sezione I NOSTRI PRODOTTI */}
+          <History />
           <Gallery />
 
           <a id={"prodotti_anchor"}></a>
           <Card />
           <NewProduct />
 
-          {/* FOOTER */}
           <a id={"contatti_anchor"} />
           <CustomFooter />
         </motion.div>
