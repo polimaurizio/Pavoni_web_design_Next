@@ -5,7 +5,7 @@ export const NewProduct = ({}) => {
   return (
     <div className="grid grid-cols-12 gap-5 pt-24">
       <div className="col-start-1 col-end-7 hidden md:block">
-        <img src="/Img/new_product_img.jpeg" alt="caffe_machine mirror_image" />
+        <img src="/Img/new_product_img.jpg" alt="caffe_machine" />
       </div>
       <div className="pl-10 my-auto align-bottom col-start-1 md:col-start-7 col-end-12 font-light font-montserrat">
         <h1 className="text-[50px] sm:text-[70px] mb-10 md:mb-16 text-primary">
