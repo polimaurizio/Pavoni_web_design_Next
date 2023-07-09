@@ -75,7 +75,7 @@ export const Card = ({}) => {
                       className="py-2 px-4 text-xs h-min bg-[#f2f2f2] hover:bg-primary hover:text-white rounded-full"
                       href="#"
                     >
-                      Aggiungi
+                      Scegli
                     </button>
                   </div>
                 </div>
