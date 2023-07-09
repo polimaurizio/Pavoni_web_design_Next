@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Carousel, Flowbite } from "flowbite-react";
 import { motion } from "framer-motion";
@@ -67,11 +68,13 @@ const Carrosello = ({}) => {
           transition={{ duration: 1, delay: 1 }}
           className="w-100 justify-center flex -translate-y-24"
         >
-          <img
-            className="fas fa-chevron-down"
-            src="/Img/down-arrow.svg"
-            alt="down-arrow"
-          />
+          <a href="#storia_anchor">
+            <img
+              className="fas fa-chevron-down"
+              src="/Img/down-arrow.svg"
+              alt="down-arrow"
+            />
+          </a>
         </motion.div>
       </Flowbite>
     </div>
