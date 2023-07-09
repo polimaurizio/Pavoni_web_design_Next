@@ -1,7 +1,7 @@
 import { React, useRef } from "react";
 import CustomButton from "../CustomButton/CustomButton";
 
-const CustomHorizontalCard = () => {
+const History = () => {
   return (
     <div
       className={
@@ -25,4 +25,4 @@ const CustomHorizontalCard = () => {
   );
 };
 
-export default CustomHorizontalCard;
+export default History;

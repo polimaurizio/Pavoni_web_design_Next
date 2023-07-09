@@ -1,14 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 import Nav from "../Components/Nav";
 import Container from "../Components/Container";
 import Carrosello from "../Components/Carrosello";
 import CustomCard from "../Components/CustomCard";
 import CustomFooter from "../Components/Footer";
-import CustomHorizontalCard from "../Components/CustomHorizontalCard";
+import History from "../Components/History";
 import CustomButton from "../Components/CustomButton";
 import React, { useRef, useState, useEffect } from "react";
 import Gallery from "../Components/Gallery";
 import { useScroll, motion } from "framer-motion";
 import Preloader from "../Components/Preloader";
+import NewProduct from "@/Components/NewProduct/NewProduct";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +29,7 @@ export default function Home() {
   });
 
   return (
-    <Container className={"select-none"}>
+    <Container className={""}>
       {isLoading ? (
         // Mostra il preloader se isLoading è true
         <Preloader />
@@ -59,7 +61,7 @@ export default function Home() {
                 alt="story_img"
               />
             </div>
-            <CustomHorizontalCard />
+            <History />
           </div>
 
           {/* Sezione I NOSTRI PRODOTTI */}
@@ -93,6 +95,8 @@ export default function Home() {
           <CustomButton href={"#"} className={"justify-center"}>
             Scopri di più
           </CustomButton>
+
+          <NewProduct />
 
           {/* FOOTER */}
           <a id={"contatti_anchor"} />
