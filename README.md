@@ -1,10 +1,15 @@
-### Info
-This is a project in another repo but i was using only React and this repo contains the progect migrated in Nextjs.
 
+### Clone
+```
+git clone https://github.com/polimaurizio/Pavoni_web_design_Next.git
+```
 
-### Start
+### Install
 ```
 npm install
 npm run build
-npm run dev
 ```
+
+### Run
+site: ```npm run dev```
+storybook: ```npm run storybook```
