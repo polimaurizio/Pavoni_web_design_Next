@@ -47,7 +47,7 @@ export const Card = ({}) => {
     //container: containerRef,
     offset: ["start end", "end start"],
   });
-  const x = useTransform(scrollYProgress, [0, 0.3], ["10%", "0%"]);
+  const x = useTransform(scrollYProgress, [0, 0.3], ["5%", "0%"]);
 
   return (
     <div className="w-full pt-20 grid grid-cols-12 gap-5">
