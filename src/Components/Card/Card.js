@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 /* eslint-disable @next/next/no-img-element */
 
@@ -40,7 +40,7 @@ const cardContent = [
   },
 ];
 
-export const Card = ({}) => {
+export const Card = ({ cardContent }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

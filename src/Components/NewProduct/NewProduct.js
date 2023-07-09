@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import CustomButton from "../CustomButton/CustomButton";
+import CustomButton from "../Button/Button";
 
 export const NewProduct = ({}) => {
   return (

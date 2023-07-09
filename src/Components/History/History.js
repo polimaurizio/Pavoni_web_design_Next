@@ -1,5 +1,5 @@
 import { React, useRef } from "react";
-import CustomButton from "../CustomButton/CustomButton";
+import CustomButton from "../Button/Button";
 
 const History = () => {
   return (
