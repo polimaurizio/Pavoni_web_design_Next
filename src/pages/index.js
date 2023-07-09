@@ -2,15 +2,14 @@
 import Nav from "../Components/Nav";
 import Container from "../Components/Container";
 import Carrosello from "../Components/Carrosello";
-import CustomCard from "../Components/CustomCard";
 import CustomFooter from "../Components/Footer";
 import History from "../Components/History";
-import CustomButton from "../Components/CustomButton";
 import React, { useRef, useState, useEffect } from "react";
 import Gallery from "../Components/Gallery";
 import { useScroll, motion } from "framer-motion";
 import Preloader from "../Components/Preloader";
 import NewProduct from "@/Components/NewProduct/NewProduct";
+import Card from "@/Components/Card/Card";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +43,6 @@ export default function Home() {
 
           {/* Sezione LA NOSTRA STORIA */}
           <a id={"storia_anchor"} />
-
           <div className="grid grid-cols-12 gap-5 w-full">
             <h1
               className={
@@ -68,34 +66,7 @@ export default function Home() {
           <Gallery />
 
           <a id={"prodotti_anchor"}></a>
-          <CustomCard
-            cardContent={[
-              {
-                img: "/Loghi/image_1.jpeg",
-                title: "Esperto Edotto",
-                text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
-              },
-              {
-                img: "/Loghi/image_2.jpeg",
-                title: "Esperto Edotto",
-                text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
-              },
-              {
-                img: "/Loghi/image_3.jpeg",
-                title: "Esperto Edotto",
-                text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
-              },
-              {
-                img: "/Loghi/image_1.jpeg",
-                title: "Esperto Edotto",
-                text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
-              },
-            ]}
-          />
-          <CustomButton href={"#"} className={"justify-center"}>
-            Scopri di più
-          </CustomButton>
-
+          <Card />
           <NewProduct />
 
           {/* FOOTER */}
