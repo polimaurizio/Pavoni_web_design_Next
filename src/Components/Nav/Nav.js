@@ -1,10 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import Logo from "../Logo/Logo";
 import React, { useState } from "react";
 
 const pages = [
   {
     page: "Home",
-    href: "www.google.it",
   },
   {
     page: "Storia",

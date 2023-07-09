@@ -4,39 +4,39 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 const cardContent = [
   {
-    img: "/Loghi/image_1.jpeg",
+    img: "/Img/macchina_caffe_1.jpeg",
     title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    text: "Il nuovo modello di punta delle macchine a leva domestiche.",
   },
   {
-    img: "/Loghi/image_2.jpeg",
-    title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    img: "/Img/macchina_caffe_2.jpeg",
+    title: "Esperto Competenze",
+    text: "Materiali pregiati e possibilità di controllo costante della...",
   },
   {
-    img: "/Loghi/image_3.jpeg",
-    title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    img: "/Img/macchina_caffe_3.jpeg",
+    title: "Esperto Abile",
+    text: "Macchina da competizione per gli specialisti dell’Espresso.",
   },
   {
-    img: "/Loghi/image_1.jpeg",
-    title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    img: "/Img/macchina_caffe_4.jpeg",
+    title: "EXPO 2015",
+    text: "La Pavoni presenta tre nuovi modelli dedicati all’evento internazionale 2015.",
   },
   {
-    img: "/Loghi/image_1.jpeg",
-    title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    img: "/Img/macchina_caffe_5.jpeg",
+    title: "Stradivari professional",
+    text: "I modelli Europiccola e Professional rappresentano la massima espressione di tecnologia...",
   },
   {
-    img: "/Loghi/image_1.jpeg",
-    title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    img: "/Img/macchina_caffe_6.jpeg",
+    title: "Professional gold",
+    text: "I modelli Europiccola e Professional rappresentano la massima espressione di tecnologia e materiali pregiati...",
   },
   {
-    img: "/Loghi/image_1.jpeg",
-    title: "Esperto Edotto",
-    text: "Il nuovo modello di punta delle macchine a leva domestiche. Materiali pregiati e possibilità di controllo costante della pressione di erogazione esercitata abbassando...",
+    img: "/Img/macchina_caffe_3.jpeg",
+    title: "Professional lusso",
+    text: "I modelli Europiccola e Professional rappresentano la massima espressione di tecnologia e materiali pregiati.",
   },
 ];
 
@@ -47,7 +47,7 @@ export const Card = ({}) => {
     //container: containerRef,
     offset: ["start end", "end start"],
   });
-  const x = useTransform(scrollYProgress, [0, 0.4], ["10%", "0%"]);
+  const x = useTransform(scrollYProgress, [0, 0.3], ["5%", "0%"]);
 
   return (
     <div className="w-full pt-20 grid grid-cols-12 gap-5">
@@ -60,7 +60,7 @@ export const Card = ({}) => {
             {cardContent.map((content, index) => (
               <div
                 key={index}
-                className="bg-[#f9f9f9] h-min min-w-[250px] w-[280px] mr-10 rounded-md border border-primary border-opacity-5"
+                className="bg-[#f9f9f9] relative h-[430px] min-w-[250px] w-[280px] mr-10 rounded-md border border-primary border-opacity-5"
               >
                 <img
                   src={content.img}
@@ -70,12 +70,12 @@ export const Card = ({}) => {
                 <div className="p-5 font-montserrat text-primary">
                   <h1 className="font-semibold">{content.title}</h1>
                   <p className="pt-2 text-xs">{content.text}</p>
-                  <div className="flex justify-end pt-3">
+                  <div className="absolute bottom-5 right-5">
                     <button
                       className="py-2 px-4 text-xs h-min bg-[#f2f2f2] hover:bg-primary hover:text-white rounded-full"
                       href="#"
                     >
-                      Aggiungi
+                      Scegli
                     </button>
                   </div>
                 </div>
