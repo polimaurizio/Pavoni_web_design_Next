@@ -40,7 +40,7 @@ const cardContent = [
   },
 ];
 
-export const Card = ({ cardContent }) => {
+export const Card = ({}) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
